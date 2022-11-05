@@ -11,14 +11,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // widget is like we use int double string it return a widget
     return MaterialApp(
-      
       themeMode: ThemeMode.light,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
       routes: {
-        "/":(context) => loginpage()
+        "/":(context) => loginpage(),
+        "/home":(context) => Homepage(),
       },
     );
   }
